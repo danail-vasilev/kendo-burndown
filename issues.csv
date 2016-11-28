@@ -1,0 +1,356 @@
+id,number,repository,state,title,body,creator,assignee,labels,milestone,size,pull_request,comments,sorted,created_at,closed_at
+180571015,6172,telerik/kendo,open,Gulp tasks configuration for WebDriverCss test project and admin panel,"1. Repositories files in angular app should be cleaned before starting it 
+2. Start the admin panel via gulp
+3. Execute tests
+",jivanova,mparvanov,"In Progress,QA,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,true,2016-10-03T06:27:15Z,
+189359806,30,telerik/kendo-angular-buttons,open,Add data-binding to SplitButton,"Implement the data property.
+
+The SplitButton enables you to bind data of primitive types such as strings and numbers as well as data inside objects.
+
+Related to - #24",spatarinski,,"In Progress,size: 5,SplitButton,Team2",Sprint5.R1.2017,5.0,false,0,true,2016-11-15T10:54:10Z,
+189358769,27,telerik/kendo-angular-buttons,open,Implement properties and events of SplitButton,"# Properties
+ - text
+ - disabled
+ - icon
+ - iconClass
+ - imageUrl
+
+# Events
+- Add onClick event emitted on the button click.
+
+Related to - #24 ",spatarinski,spatarinski,"Needs QA,size: 5,SplitButton,Team2",Sprint5.R1.2017,5.0,false,0,true,2016-11-15T10:49:33Z,
+189357989,26,telerik/kendo-angular-buttons,open,Implement default rendering of SplitButton,"Related item #24
+Implement the default rendering of the component",spatarinski,spatarinski,"Needs QA,size: 5,SplitButton,Team2",Sprint5.R1.2017,5.0,false,0,true,2016-11-15T10:45:53Z,
+188280608,6308,telerik/kendo,closed,Article about initially hidden editor or moved into the DOM,"The article should explain the editor's iframe issue when editor is shown or moved into the DOM (editor in window, tabstrip).
+
+For the case when editor is in TabStrip can be used TabStrip activate event for calling editor refresh method (Ticket ID: 1073091)",nstoychev,Iankodj,"C: Editor,Documentation,size: 1,Team2",Sprint5.R1.2017,1.0,false,1,true,2016-11-09T15:51:24Z,2016-11-24T12:29:15Z
+189066270,6320,telerik/kendo,open,Implement the bundling of the Kendo.Mvc.Export assembly,Need to bundle the DPL DLLs for word processing in the kendo bundle.,spatarinski,nlazarov,"Enhancement,Needs QA,size: 3,Team2",Sprint5.R1.2017,3.0,false,0,true,2016-11-14T09:37:07Z,
+190041744,6347,telerik/kendo,closed,Sanity check of Team2 components with jQuery 3 support,"- [x] Editor
+- [x] Diagram
+
+Forms:
+- [x] Slider
+- [x] Switch 
+- [x] Color Picker
+
+Buttons:
+- [ ] Button (done)
+- [x] ButtonGroup
+- [x] Pager
+- [x] Menu 
+- [x] Toolbar
+
+Modals:
+- [x] ContextMenu
+- [x] Dialog
+- [x] ProgressBar
+- [x] Tooltip
+- [x] Window
+- [x] Notification",mparvanov,,"Internal,QA,Team2",Sprint5.R1.2017,,false,0,false,2016-11-17T13:05:32Z,2016-11-18T14:48:46Z
+189662725,6341,telerik/kendo,closed,Add dialog-content tag,Extend Dialog JSP wrapper with a dialog-content tag in order to render JSP syntax in the dialog.,Iankodj,Iankodj,"C: Dialog,Enhancement,size: 1,S: Wrappers (Java),Team2",Sprint5.R1.2017,1.0,false,0,false,2016-11-16T10:41:51Z,2016-11-23T05:57:14Z
+189360243,31,telerik/kendo-angular-buttons,open,DropDownButton data binding,Implement DropDownButton data binding.,Stamo-Gochev,Stamo-Gochev,"DropDownButton,Needs QA,size: 5,Team2",Sprint5.R1.2017,5.0,false,0,false,2016-11-15T10:56:07Z,
+189359587,29,telerik/kendo-angular-buttons,open,DropDownButton properties,"Implement DropDownButton properties https://github.com/telerik/kendo-angular-buttons/issues/23
+",Stamo-Gochev,Stamo-Gochev,"DropDownButton,Needs QA,size: 5,Team2",Sprint5.R1.2017,5.0,false,1,false,2016-11-15T10:53:10Z,
+189359139,28,telerik/kendo-angular-buttons,closed,DropDownButton rendering,"Implement the rendering of the DropDownButton component.
+
+Use the following example for testing:
+
+https://github.com/telerik/kendo-angular-buttons/blob/eacfa10e1c5622dba3d83db7bea9b42f4a14b67d/examples/dropdownbutton.html#L10",Stamo-Gochev,Stamo-Gochev,"DropDownButton,size: 5,Team2",Sprint5.R1.2017,5.0,false,0,false,2016-11-15T10:51:14Z,2016-11-21T09:33:27Z
+189146374,6335,telerik/kendo,closed,Add loading panel during import in Editor,Loading sign should be over the whole editor content.,nlazarov,nstoychev,"C: Editor,Enhancement,size: 2,Team2",Sprint5.R1.2017,2.0,false,2,false,2016-11-14T15:46:33Z,2016-11-22T14:11:23Z
+189105876,6332,telerik/kendo,closed,Port Stock History Dashboard to MVC,"- [x] MVC5 port
+- [x] .core MVC port",nlazarov,danail-vasilev,"Demo,size: 5,Team2",Sprint5.R1.2017,5.0,false,0,false,2016-11-14T12:56:32Z,2016-11-22T07:19:53Z
+189101908,6327,telerik/kendo,closed,fix disabled menu items can be selected in IE11,"You can select disabled menu items in IE11 - http://screencast.com/t/Gt5gl7Gq
+Steps to reproduce:
+1) Open this dojo sample in IE11 - http://dojo.telerik.com/iyUzI/10
+2) Click on first item-> sub item 1,2,3
+Actual - disabled items are selected. Expected - disabled items should not be selected.
+
+Public item: telerik/kendo-ui-core#2378",spatarinski,nstoychev,"Bug,C: Menu,SEV: Low,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-14T12:35:34Z,2016-11-25T14:20:21Z
+189099703,6325,telerik/kendo,closed,Validate event doesn't fire on blur,"### Bug report
+### Reproduction of the problem
+
+http://dojo.telerik.com/@tsvetomir/OVoCA
+### Current behavior
+
+The validity of the form inputs is updated on blur. Yet, the _validate_ event only fires when clicking the button.
+### Expected behavior
+
+The _validate_ event should fire every time the input validity status is updated on screen.
+### Reason for Suggesting the Feature
+
+The current behavior is not intuitive and leads to confusion as apparent from this [forum thread](http://www.telerik.com/forums/attempting-to-get-an-event-on-validation).
+### Environment
+- **Kendo UI version:** 2016.2.714
+- **jQuery version:** any
+- **Browser:** all
+
+Public item: telerik/kendo-ui-core#2125",spatarinski,slavtsekov,"Bug,C: Validator,SEV: Medium,size: 5,Team2",Sprint5.R1.2017,5.0,false,0,false,2016-11-14T12:24:09Z,2016-11-25T15:27:55Z
+189089636,6323,telerik/kendo,closed,Editor does not wrap content correctly on iOS,"### Bug report
+
+Kendo UI Editor does not wrap words as expected, instead, very long words stick out of the content element:
+
+<a href=""http://tinypic.com?ref=2jbsa6c"" target=""_blank""><img src=""http://i66.tinypic.com/2jbsa6c.png"" border=""0"" alt=""Image and video hosting by TinyPic""></a>
+
+As a work around you may apply a CSS rule `word-break: break-all;`, however, it will break a word in two if it is too long to fit on the same line:  
+
+```
+var editor = $(""#editor"").kendoEditor().data(""kendoEditor""); 
+editor.body.style.wordBreak = ""break-all"";
+```
+
+### Reproduction of the problem
+
+Test it on an iOS device, does not reproduce on simulators nor on Android phones.
+
+[Dojo](http://dojo.telerik.com/iYaZi)
+[Fullscreen](http://runner.telerik.io/fullscreen/iYaZi)
+
+### Expected/desired behavior
+
+Editor should wrap content/break words
+
+### Environment
+
+* **Kendo UI version:** 2016.3.1028
+* **Browser:** [ iOS XX Safari ]
+
+Public item: telerik/kendo-ui-core#2438",nlazarov,slavtsekov,"Bug,C: Editor,SEV: Medium,size: 1,Team2",Sprint5.R1.2017,1.0,false,0,false,2016-11-14T11:29:41Z,2016-11-23T07:00:55Z
+189064832,6319,telerik/kendo,closed,Integrate new unified font in INTERACTIVITY & UX group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,0,false,2016-11-14T09:29:59Z,2016-11-21T09:24:47Z
+189064738,6318,telerik/kendo,closed,Integrate new unified font in MEDIA group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-14T09:29:32Z,2016-11-16T15:30:54Z
+189064624,6317,telerik/kendo,closed,Integrate new unified font in FRAMEWORK group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,0,false,2016-11-14T09:29:01Z,2016-11-21T09:24:08Z
+189064492,6316,telerik/kendo,closed,Integrate new unified font in SCHEDULING group widgets ,"Calendar
+
+- [x] Test
+- [x] Demos
+
+Gantt
+
+- [x] Test
+- [x] Demos
+
+Scheduler
+
+- [x] Test
+- [x] Demos
+
+Epic: #6182",spatarinski,,"Enhancement,size: 3,Team2",Sprint5.R1.2017,3.0,false,0,false,2016-11-14T09:28:29Z,2016-11-16T14:51:39Z
+189064253,6314,telerik/kendo,closed,Integrate new unified font in BARCODES group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,1,false,2016-11-14T09:27:21Z,2016-11-16T15:31:05Z
+189064152,6313,telerik/kendo,closed,Integrate new unified font in GAUGES group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,0,false,2016-11-14T09:26:53Z,2016-11-18T16:08:05Z
+189064017,6312,telerik/kendo,closed,Integrate new unified font in CHARTS group widgets ,Epic: #6182,spatarinski,,"Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,1,false,2016-11-14T09:26:17Z,2016-11-16T13:48:35Z
+188803480,6310,telerik/kendo,closed,Keyboard undo command in Safari does not undo correctly content in Editor,"### Bug report
+The editor does not track formatting changes in the undo stack on Safari/Chrome on MAC
+
+### Reproduction of the problem
+
+1. Open this live demo on Safari on MAC: http://demos.telerik.com/kendo-ui/editor/index
+2. Select any part of the content.
+3. Apply a formatting change
+4. Insert any text anywhere.
+5. Apply other formatting change
+6. Press the Command+ Z
+
+The text inserted is removed and the formatted text remains.
+
+### Expected/desired behavior
+The Undo functionality should work as on Windows and the formatting should be removed
+
+### Environment
+
+* **Kendo UI version:** 2016.3.1028
+* **Browser:** MAC Chrome and Safari
+
+Public item: telerik/kendo-ui-core#2423",nlazarov,slavtsekov,"Bug,C: Editor,SEV: High,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-11T16:55:41Z,2016-11-23T07:39:18Z
+188803192,6309,telerik/kendo,closed,Data-role attributes are not removed from the tables when obtaining the content,"### Bug report
+
+The data-role=""resizable"" attributes are not removed from the tr and td elements when obtaining the content from the Kendo Editor.
+
+### Reproduction of the problem
+Go to [http://demos.telerik.com/kendo-ui/editor/all-tools](http://demos.telerik.com/kendo-ui/editor/all-tools) and insert a table.
+You'll see multiple data-role=""resizable"" attributes inside the tr and td elements
+
+### Current behavior
+When viewing the source of the HTML or getting the content data-role=""resizable"" attributes are available in the table and tr tags.
+
+### Expected/desired behavior
+Ultimately, when viewing the source of the HTML or getting the content, we should not be seeing this extra code which is there purely for the behaviour within the editor.
+
+### Environment
+
+* **Kendo UI version:** 2016.3.1028
+* **Browser:** all
+
+Public item: telerik/kendo-ui-core#2399",nlazarov,slavtsekov,"Bug,C: Editor,SEV: High,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-11T16:54:15Z,2016-11-22T16:43:45Z
+188202190,6304,telerik/kendo,closed,Apply font family to the 'Export As' dropdown options,"The following font family need to be applied to the 'Export As' dropdown options:
+**""Arial, Helvetica, sans-serif""**
+
+Currently the Dropdown element is decorated with Arial, Helvetica, sans-serif by kendo.common-material.css
+however the dropdown has font family ""Arial"" only.
+
+",mparvanov,theOrlin,"C: Editor,Enhancement,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-09T09:37:11Z,2016-11-18T11:33:24Z
+187971781,6301,telerik/kendo,closed,Editor moves special character to new line when pressing Enter,"### Bug report
+
+### Reproduction of the problem
+1. Open [http://demos.telerik.com/kendo-ui/editor/index](http://demos.telerik.com/kendo-ui/editor/index)
+2. Insert a special character via ""ALT"" Key (e.g., ""ALT+1"") and press ""Enter"".
+
+video: [http://screencast.com/t/VS9btt7C5](http://screencast.com/t/VS9btt7C5)
+### Current behavior
+The cursor (and the special character) are in a new line. The cursor is placed before the special character.
+
+### Expected/desired behavior
+The special character remains on the original line, while the cursor is moved to the next one.
+
+### Environment
+
+* **Kendo UI version:** 2016.3.1028
+* **Browser:** [all] 
+
+### Public item
+telerik/kendo-ui-core#2426
+",vveesseelliinnaa,slavtsekov,"Bug,C: Editor,SEV: Medium,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-11-08T11:48:03Z,2016-11-22T16:35:16Z
+186279497,6267,telerik/kendo,closed,Integrate new unified font in editors' group widgets,"AutoComplete
+
+- [x] - Demos
+- [x] - Tests
+
+ColorPicker
+
+- [x] - Demos
+- [x] - Tests
+
+ComboBox
+
+- [x] - Demos
+- [x] - Tests
+
+DatePicker
+
+- [x] - Demos
+- [x] - Tests
+
+DateTimePicker
+
+- [x] - Demos
+- [x] - Tests
+
+DropDownList
+
+- [x] - Demos
+- [x] - Tests
+
+Editor
+
+- [x] - Demos
+- [x] - Tests
+
+MaskedTextBox
+
+- [x] - Demos - in Validation Demo (maskedtextbox/validation) - k-icon case should be dobe in the Demos itself - the is a different task - #6289
+- [x] - Tests
+
+MultiSelect
+
+- [x] - Demos
+- [x] - Tests
+
+Numeric TextBox
+
+- [x] - Demos
+- [x] - Tests
+
+Slider
+
+- [x] - Demos
+- [x] - Tests
+
+
+TimePicker
+
+- [x] - Demos
+- [x] - Tests
+
+
+Upload
+
+- [x] - Demos
+- [x] - Tests
+
+
+Validator
+
+- [x] - Demos
+- [x] - Tests
+
+
+Switch
+
+- [x] - Demos
+- [x] - Tests
+
+Epic: #6182",nstoychev,melhaer,"C: AutoComplete,C: ColorPicker,C: ComboBox,C: DatePicker,C: DateTimePicker,C: DropDownList,C: Editor,C: MaskedTextBox,C: MultiSelect,C: NumericTextBox,C: Slider,C: Switch,C: TimePicker,C: Upload,C: Validator,Enhancement,size: 8,Team2",Sprint5.R1.2017,8.0,false,1,false,2016-10-31T13:09:26Z,2016-11-25T14:02:25Z
+186269234,6265,telerik/kendo,closed,Add clear color button in the ColorPicker widget,"There should be a clear color button in the ColorPicker widget. This button will reset the value to `null`.
+
+There should be an option to show/hide the clear color button.
+
+Steps:
+- [x] UX
+- [x] Implementation
+- [x] Documentation",nstoychev,nstoychev,"C: ColorPicker,Enhancement,size: 3,Team2",Sprint5.R1.2017,3.0,false,2,false,2016-10-31T12:14:10Z,2016-11-25T14:02:11Z
+186243274,6262,telerik/kendo,closed,Cannot remove a chosen/loaded color from the ColorPicker from TableWizard dialog,"",nstoychev,nstoychev,"C: Editor,Enhancement,size: 1,Team2",Sprint5.R1.2017,1.0,false,1,false,2016-10-31T09:52:19Z,2016-11-18T15:27:44Z
+183901049,6237,telerik/kendo,closed,Expose popup's appendTo option in ContextMenu's options,"### Enhancement
+
+This option will enable developers to control where to render the DOM element for the context menu.
+### Use case
+
+Using the context menu in dynamically loaded content, like popups, dialogs, containers. This will prevent DOM elements to be rendered in the body and create duplicates on reloading the containers. Plus, the same will resolve appears issues with the same scenario.
+### Details
+
+Current code: https://github.com/telerik/kendo-ui-core/blob/master/src/kendo.menu.js#L1465-L1472
+
+Suggestion: 
+
+``` JS
+...
+.kendoPopup({
+    anchor: that.target || ""body"",
+    copyAnchorStyles: that.options.copyAnchorStyles,
+    collision: that.options.popupCollision || ""fit"",
+    animation: that.options.animation,
+    activate: that._triggerProxy,
+    deactivate: that._triggerProxy,
+    appendTo: that.options.appendTo
+}).data(""kendoPopup"");
+```
+
+Ticket: https://admin.telerik.com/?Context=Support&Control=~%2fUserControls%2fSupport%2fThreadReply.ascx&ST=1069162&SM=0
+
+Make sure to document that so to appear in the wrappers. 
+### Public item: telerik/kendo-ui-core#2336
+",Iankodj,theOrlin,"C: ContextMenu,Enhancement,size: 2,Team2",Sprint5.R1.2017,2.0,false,0,false,2016-10-19T08:46:15Z,2016-11-21T12:12:15Z
+182788100,6216,telerik/kendo,closed,Implement logged issue tracker in WebDriverCss-AdminPanel,"There should be a checkbox indicating whether an issue found in the tests is already checked and logged in github. Next to the confirm change button, there should be an indication if the issue is tested by QA and logged.
+![image](https://cloud.githubusercontent.com/assets/7159157/19350659/53ba77ea-9161-11e6-93ca-768a9525d8dc.png)
+",jivanova,jivanova,"QA,Team2",Sprint5.R1.2017,,false,0,false,2016-10-13T13:22:44Z,2016-11-25T15:29:04Z
+167309755,5886,telerik/kendo,closed,Create Table Wizard dialog for Editor widget,"You can find the design at [file:///R:/UX/KendoUI/Widgets%20UX%20Specs/Editor/Table_Wizard.png](file:///R:/UX/KendoUI/Widgets%20UX%20Specs/Editor/Table_Wizard.png)
+- [x] Implement Table view in Table Wizard (needs #5885)
+- [x] Implement Cell view in Table Wizard (needs #5887)
+- [x] Implement Accessibility view in Table Wizard (needs #5888)
+- [x] Wire up Table Wizard dialog with Editor commands (needs #5889)
+- [x] Document the Table Wizard dialogs
+
+Issues:
+- [x] Apply Tabstrip background in Table wizard dialog #5972 
+- [x] Text align icons are not centered in Table wizard dialog #5973
+- [x]  Update Kedno font styles with table and cell alignment icons #6014 
+- [x]  Add font icons for cell and table alignment in TableWizard #6017 
+- [x]  Table Wizard Dialog Improvements #6040
+- [x] The value of ""Border style"" dropdown is not preserved in Table Wizard dialog #6050 
+- [x] Change the casing of border styles dropdown values to lower case needs #6076
+- [x] Set min values to the numeric textboxes(no negative sizes) needs #6077
+- [x] Cannot remove a chosen/loaded color from the ColorPicker - we need design #6262
+- [x] Add localization strings - needs #6152
+- [x] TableWizard tool title from the InsertTable popup is not localized needs #6139
+- [x] Cell margin and Cell Padding (cell tab) are applied as invalid properties instead as styles needs #6140
+- [x] Cells with same id can be applied by Cell tab needs #6141
+- [x] Max-height of 720px set to`.k-editor-table-wizard-dialog` element breaks the layout with bigger font sizes - the max-height is set because of IE the issue occurs because the CSS styles are loaded with a few milliseconds delay - needs #6154
+- [x] IndexSizeError is thrown when opening Table Wizard and previous selection over a table is applied #6095 
+",nlazarov,,"C: Editor,Epic,Feature,Team2",Sprint5.R1.2017,,false,0,false,2016-07-25T08:21:22Z,2016-11-21T08:24:43Z

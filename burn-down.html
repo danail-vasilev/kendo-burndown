@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demos.telerik.com/kendo-ui/grid/local-data-binding">
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.1118/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.1118/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.1118/styles/kendo.default.mobile.min.css" />
+
+    <script src="//kendo.cdn.telerik.com/2016.3.1118/js/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2016.3.1118/js/kendo.all.min.js"></script>
+</head>
+<body>
+        <script src="C:\Users\dvasilev\Desktop\BurnDown Script\issues.json"></script>
+
+        <div id="example">
+            <div id="grid"></div>
+            <div id="chart"></div>
+            <script>
+                $(document).ready(function() {
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            data: issues,
+                            schema: {
+                                parse: function(data) {
+                                    var closedDays = [];
+                                    for (var i = 0; i < data.length; i++) {
+                                        var closedDay = data[i];
+                                        if(closedDay.closed_at == null){
+                                            closedDay.closed_at_day = null;
+                                        }else {
+                                            closedDay.closed_at_day = kendo.toString(new Date(closedDay.closed_at), 'yyyy/MM/dd');
+                                        }
+                                        closedDays.push(closedDay);
+                                    }
+                                   
+                                    return closedDays;                
+                                },
+                                model: {
+                                    fields: {
+                                        state: { type: "string" },
+                                        size: { type: "number" },
+                                        closed_at: { type: "date" },
+                                        closed_at_day: { type: "date" }
+                                    }
+                                }
+                            },
+                            sort: { field: "closed_at_day", dir: "asc" },
+                            group:{
+                                field: "closed_at_day", aggregates:[
+                                    { field: "closed_at_day", aggregate: "count" },
+                                    { field: "size", aggregate: "sum" },
+                                ]
+                            },
+                            aggregate: [ { field: "closed_at_day", aggregate: "count" },
+                                          { field: "size", aggregate: "sum" }]
+                        },
+                        height: 550,
+                        scrollable: true,
+                        sortable: true,
+                        filterable: true,
+                        columns: [
+                            { field: "state", title: "state", width: "130px" },
+                            { field: "size", title: "size", width: "130px", aggregates: ["sum"], footerTemplate: "Total Sum: #=sum#", groupFooterTemplate: "Sum: #=sum#"},
+                            { field: "closed_at_day", title:"closed_at_day", template: "#= kendo.toString(closed_at_day, 'yyyy/MM/dd') #", width: "130px", aggregates: ["count"], footerTemplate: "Total Count: #=count#", groupFooterTemplate: "Count: #=count#", groupHeaderTemplate: "closed_at_day: #= kendo.toString(value, 'yyyy/MM/dd') # (Count: #= count#)" }
+                        ],
+                        dataBound: function(e) {
+                            var grid = this;  
+                            var ds = grid.dataSource;                      
+                            if (ds.group().length > 0) {
+                                $(".k-grouping-row").each(function () {
+                                    grid.collapseGroup(this);
+                                });
+                            }
+                            calculateBurnDownData(ds);
+                        }
+                    });
+
+                    function calculateBurnDownData(ds){
+                        var view = ds.view();
+                        var sizeSumAggregate = ds.aggregates().size.sum;
+                        var sizeCumDown = sizeSumAggregate;
+                        var newData = new Array();
+                        for (var i = 0; i < view.length; i++) {
+                            var item = view[i];
+                            if(item.value!=null){
+                                var size = item.aggregates.size.sum;
+                                sizeCumDown = sizeCumDown - size;
+                                newData.push({date: item.value, size: size, sizeCumDown: sizeCumDown });
+                            }
+                        }
+                        //fill missing date values
+                        console.log(newData);
+                        createChart(newData);
+                    }
+
+                    function createChart(chartData) {
+                        $("#chart").kendoChart({
+                            dataSource: {
+                                data: chartData
+                            },
+                            title: {
+                                align: "center",
+                                text: "Kendo BurnDown Chart"
+                            },
+                            legend: {
+                                visible: false
+                            },
+                            seriesDefaults: {
+                                type: "line",
+                                markers:{visible: false},
+                                missingValues: "interpolate",
+                                labels: {
+                                    visible: true,
+                                    background: "transparent"
+                                }
+                            },
+                            series: [{
+                                field: "sizeCumDown"
+                            }],
+                            valueAxis: {
+                                //max: 28,
+                                majorGridLines: {
+                                    visible: false
+                                },
+                                visible: true
+                            },
+                            categoryAxis: {
+                                justified:true,
+                                field: "date",
+                                majorGridLines: {
+                                    visible: false
+                                },
+                                labels:{
+                                    format: "MM/dd(ddd)"
+                                },
+                                line: {
+                                    visible: true
+                                }
+                            }
+                        });
+                    }                  
+                });
+            </script>
+</div>
+
+
+</body>
+</html>
